@@ -6,7 +6,7 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/22 12:18:21 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/25 17:05:18 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/07/26 09:36:06 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int	main(void)
 	while(1)
 	{
 		ask_for_input(&buffer, "Please enter a command");
+		std::cout << std::endl;
 		if (!buffer.empty())
 		{
 			if (buffer.compare(add) == 0)

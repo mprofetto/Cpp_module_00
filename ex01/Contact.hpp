@@ -6,7 +6,7 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/22 12:07:23 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/25 16:17:19 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/07/26 09:31:49 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 class Contact
 {
 	private:
-		std::string	first_name;
-		std::string	nickname;
-		std::string	phone_number;
-		std::string	darkest_secret;
+		std::string	_first_name;
+		std::string	_nickname;
+		std::string	_phone_number;
+		std::string	_darkest_secret;
 
 	public:
 		Contact(void);

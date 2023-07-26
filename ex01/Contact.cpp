@@ -6,7 +6,7 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/22 12:09:16 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/25 17:03:18 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/07/26 09:32:35 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 Contact::Contact(void)
 {
-	this->first_name = std::string();
-	this->nickname = std::string();
-	this->phone_number = std::string();
-	this->darkest_secret = std::string();
+	this->_first_name = std::string();
+	this->_nickname = std::string();
+	this->_phone_number = std::string();
+	this->_darkest_secret = std::string();
 	return;
 }
 
@@ -34,7 +34,7 @@ int	Contact::assign_first_name(std::string	f_name)
 		std::cout << "First Name cannot be empty" << std::endl;
 		return (1);
 	}
-	this->first_name = f_name;
+	this->_first_name = f_name;
 	return (0);
 }
 
@@ -45,7 +45,7 @@ int	Contact::assign_nickname(std::string	nickname)
 		std::cout << "Nickname cannot be empty" << std::endl;
 		return (1);
 	}
-	this->nickname = nickname;
+	this->_nickname = nickname;
 	return (0);
 }
 
@@ -64,7 +64,7 @@ int	Contact::assign_phone_number(std::string	phone)
 		std::cout << "Phone number needs to be numeric" << std::endl;
 		return (1);
 	}
-	this->phone_number = phone;
+	this->_phone_number = phone;
 	return (0);
 }
 
@@ -75,26 +75,26 @@ int	Contact::assign_darkest_secret(std::string	secret)
 		std::cout << "Darkest Secret cannot be empty" << std::endl;
 		return (1);
 	}
-	this->darkest_secret = secret;
+	this->_darkest_secret = secret;
 	return (0);
 }
 
 std::string Contact::get_first_name(void) const
 {
-	return (this->first_name);
+	return (this->_first_name);
 }
 
 std::string Contact::get_nickname(void) const
 {
-	return (this->nickname);
+	return (this->_nickname);
 }
 
 std::string Contact::get_phone_number(void) const
 {
-	return (this->phone_number);
+	return (this->_phone_number);
 }
 
 std::string Contact::get_darkest_secret(void) const
 {
-	return (this->darkest_secret);
+	return (this->_darkest_secret);
 }

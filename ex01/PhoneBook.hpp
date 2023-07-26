@@ -6,7 +6,7 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 09:45:30 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/25 16:48:41 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/07/26 09:33:28 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 class PhoneBook
 {
 	private:
-		Contact	contact_list[8];
-		int		index;
+		Contact	_contact_list[8];
+		int		_index;
 
 	public:
 		PhoneBook(void);

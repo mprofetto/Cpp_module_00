@@ -6,13 +6,13 @@
 #    By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/22 10:54:57 by mprofett          #+#    #+#              #
-#    Updated: 2023/07/26 13:14:27 by mprofett         ###   ########.fr        #
+#    Updated: 2023/07/26 12:19:04 by mprofett         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= myAwesomePhoneBook
+NAME		= account_management
 
-SRC			= Contact.cpp PhoneBook.cpp PhoneBookUtils.cpp main.cpp
+SRC			= tests.cpp Account.cpp
 
 OBJ			= ${SRC:.cpp=.o}
 
